@@ -4,8 +4,8 @@ const EventEmitter = require('events');
 const util = require('util');
 const grpc = require('grpc');
 
-const embeddedAssistant = require('../lib/google/assistant/embedded/v1alpha1/embedded_assistant_pb');
-const EmbeddedAssistantClient = require('./embedded-assistant').EmbeddedAssistantClient;
+const embeddedAssistant = require('../lib/google/assistant/embedded/v1alpha2/embedded_assistant_pb');
+const EmbeddedAssistantClient = require('../lib/google/assistant/embedded/v1alpha2/embedded_assistant_grpc_pb').EmbeddedAssistantClient;
 
 const ASSISTANT_API_ENDPOINT = 'embeddedassistant.googleapis.com';
 
